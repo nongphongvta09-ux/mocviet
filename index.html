@@ -1,0 +1,696 @@
+<title>Mộc Việt Chính Hãng</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<meta name="description" content="Xả kho chính hãng Mộc Việt — dầu gội xả, sữa tắm, kem ủ tóc, ngâm chân thảo dược. Giá thanh lý, COD toàn quốc.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;0,800;1,500;1,600&family=Be+Vietnam+Pro:wght@300;400;500;600;700;800&display=swap">
+<style>
+/* Layout: botanical apothecary commerce — light cream canvas, deep-forest feature bands, gold botanical line accents, clean product plates, mobile-first single column that opens to multi-column. */
+:root{
+  --bg:#f1e9d8; --surface:#fbf7ee; --surface-2:#efe6d2;
+  --ink:#232a20; --muted:#5e6450; --line:rgba(28,52,36,.14);
+  --forest:#163a2b; --forest-2:#0e2a1e; --band-fg:#f2ead6; --band-muted:#c3cdb4;
+  --gold:#a8792b; --gold-bright:#c89a3e; --gold-soft:#e4cd91;
+  --clay:#9c5733; --sale:#b23a24; --ok:#2f6d46;
+  --photo-plate:#fbf8f1;
+  --shadow:0 18px 44px -24px rgba(22,44,30,.45);
+  --radius:18px;
+  --maxw:1140px;
+  --d-head:"Playfair Display",Georgia,"Times New Roman",serif;
+  --d-body:"Be Vietnam Pro",system-ui,"Segoe UI",sans-serif;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#0c1711; --surface:#132619; --surface-2:#0f1e15;
+  --ink:#ecefe0; --muted:#a7b199; --line:rgba(236,239,224,.14);
+  --forest:#17402e; --forest-2:#0d2318; --band-fg:#f2ead6; --band-muted:#b9c6a9;
+  --gold:#d6ab57; --gold-bright:#e4bf6e; --gold-soft:#8a6f2e;
+  --clay:#cf8355; --sale:#e3765c; --ok:#6cc08c;
+  --photo-plate:#f3efe6;
+  --shadow:0 20px 48px -26px rgba(0,0,0,.7);
+  color-scheme:dark;
+}}
+:root[data-theme="dark"]{
+  --bg:#0c1711; --surface:#132619; --surface-2:#0f1e15;
+  --ink:#ecefe0; --muted:#a7b199; --line:rgba(236,239,224,.14);
+  --forest:#17402e; --forest-2:#0d2318; --band-fg:#f2ead6; --band-muted:#b9c6a9;
+  --gold:#d6ab57; --gold-bright:#e4bf6e; --gold-soft:#8a6f2e;
+  --clay:#cf8355; --sale:#e3765c; --ok:#6cc08c;
+  --photo-plate:#f3efe6;
+  --shadow:0 20px 48px -26px rgba(0,0,0,.7);
+  color-scheme:dark;
+}
+
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--d-body);font-size:16px;line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);background:var(--forest-2);z-index:60}
+img{max-width:100%;display:block}
+a{color:inherit}
+h1,h2,h3{font-family:var(--d-head);font-weight:700;line-height:1.1;text-wrap:balance;margin:0}
+p{margin:0}
+.wrap{max-width:var(--maxw);margin-inline:auto;padding-left:max(18px,env(safe-area-inset-left,0px));padding-right:max(18px,env(safe-area-inset-right,0px))}
+.band{position:relative}
+.eyebrow{font-size:.72rem;letter-spacing:.22em;text-transform:uppercase;font-weight:700}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.5em;font-family:var(--d-body);font-weight:700;font-size:1rem;border:none;border-radius:999px;padding:.85em 1.5em;cursor:pointer;text-decoration:none;transition:transform .12s ease,box-shadow .2s ease,background .2s ease;line-height:1}
+.btn:active{transform:translateY(1px)}
+.btn-gold{background:linear-gradient(135deg,var(--gold-bright),var(--gold));color:#1c1405;box-shadow:0 10px 24px -12px rgba(120,90,20,.8)}
+.btn-gold:hover{box-shadow:0 14px 30px -12px rgba(120,90,20,.9)}
+.btn-forest{background:var(--forest);color:var(--band-fg)}
+.btn-ghost{background:transparent;border:1.5px solid currentColor;color:inherit;font-weight:600}
+.btn-block{width:100%}
+:focus-visible{outline:3px solid var(--gold-bright);outline-offset:2px;border-radius:6px}
+
+/* announcement */
+.ann{background:var(--forest-2);color:var(--band-fg);font-size:.82rem;font-weight:500}
+.ann .wrap{padding-block:.6rem;display:flex;gap:.5rem 1.4rem;align-items:center;justify-content:center;flex-wrap:wrap;text-align:center}
+.ann b{color:var(--gold-soft);font-weight:700}
+
+/* header */
+header.site{position:sticky;top:env(safe-area-inset-top,0px);z-index:50;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+header.site .wrap{display:flex;align-items:center;gap:1rem;padding-block:.7rem}
+.brand{display:flex;align-items:center;gap:.6rem;text-decoration:none;color:var(--ink);background:var(--photo-plate);padding:.26rem .6rem;border-radius:10px}
+.brand-logo{height:30px;width:auto;display:block}
+.brand .mark{width:38px;height:38px;flex:0 0 auto}
+.brand .nm{font-family:var(--d-head);font-weight:800;font-size:1.22rem;letter-spacing:.02em;line-height:1}
+.brand .tg{font-size:.6rem;letter-spacing:.2em;text-transform:uppercase;color:var(--muted);font-weight:600}
+.header-cta{margin-left:auto;display:flex;align-items:center;gap:.7rem}
+.header-phone{font-weight:700;color:var(--ink);text-decoration:none;white-space:nowrap;font-size:.98rem}
+.header-phone small{display:block;font-size:.58rem;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);font-weight:600}
+@media(max-width:620px){.header-phone .lbl{display:none}}
+
+/* hero */
+.hero{background:
+  radial-gradient(120% 90% at 85% -10%,color-mix(in srgb,var(--gold-soft) 40%,transparent),transparent 60%),
+  linear-gradient(180deg,var(--surface),var(--bg));
+  overflow:hidden}
+.hero .wrap{padding-block:clamp(2.4rem,6vw,4.4rem);display:grid;grid-template-columns:1.05fr .95fr;gap:clamp(1.5rem,4vw,3rem);align-items:center}
+.hero-copy{position:relative;z-index:2}
+.badge-sale{display:inline-flex;align-items:center;gap:.5em;background:color-mix(in srgb,var(--sale) 14%,transparent);color:var(--sale);border:1px solid color-mix(in srgb,var(--sale) 40%,transparent);padding:.4em .9em;border-radius:999px;font-size:.74rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase}
+.hero h1{font-size:clamp(2.1rem,6.4vw,3.6rem);margin:.7rem 0 0;letter-spacing:-.01em}
+.hero h1 .accent{color:var(--clay);font-style:italic}
+.hero .lede{margin-top:1rem;font-size:1.06rem;color:var(--muted);max-width:34ch}
+.hero-cta{display:flex;flex-wrap:wrap;gap:.7rem;margin-top:1.5rem}
+.chips{display:flex;flex-wrap:wrap;gap:.5rem;margin-top:1.4rem}
+.chip{display:inline-flex;align-items:center;gap:.4em;background:var(--surface);border:1px solid var(--line);border-radius:999px;padding:.4em .85em;font-size:.8rem;font-weight:600}
+.chip svg{width:15px;height:15px;color:var(--gold)}
+.hero-art{position:relative;min-height:260px;display:flex;align-items:center;justify-content:center}
+.hero-plate{position:relative;width:min(100%,420px);aspect-ratio:1/1.04;border-radius:30px;background:
+  radial-gradient(90% 70% at 50% 18%,color-mix(in srgb,var(--gold-soft) 55%,var(--photo-plate)),var(--photo-plate));
+  box-shadow:var(--shadow);display:flex;align-items:center;justify-content:center;overflow:hidden}
+.hero-plate img{width:74%;filter:drop-shadow(0 24px 30px rgba(20,30,18,.3));mix-blend-mode:multiply}
+.hero-ribbon{position:absolute;top:14px;right:-6px;background:var(--sale);color:#fff;font-weight:800;font-size:.84rem;padding:.5em 1.1em;border-radius:6px;box-shadow:0 8px 18px -8px rgba(0,0,0,.5);transform:rotate(3deg)}
+.leafbg{position:absolute;inset:0;pointer-events:none;color:var(--gold);opacity:.12;z-index:1}
+.leafbg.tl{width:200px;top:-40px;left:-50px}
+.leafbg.br{width:240px;bottom:-70px;right:-40px;transform:rotate(160deg)}
+
+/* value bar */
+.values{background:var(--forest);color:var(--band-fg)}
+.values .wrap{padding-block:1.4rem;display:grid;grid-template-columns:repeat(4,1fr);gap:1rem}
+.value{display:flex;gap:.7rem;align-items:center;min-width:0}
+.value svg{width:30px;height:30px;flex:0 0 auto;color:var(--gold-soft)}
+.value b{display:block;font-size:.95rem}
+.value span{font-size:.78rem;color:var(--band-muted)}
+
+/* sections */
+section{scroll-margin-top:84px}
+.sec-head{text-align:center;max-width:46ch;margin-inline:auto;padding-block:clamp(2.2rem,5vw,3.2rem) 0}
+.sec-head .eyebrow{color:var(--gold)}
+.sec-head h2{font-size:clamp(1.7rem,4.6vw,2.6rem);margin-top:.5rem}
+.sec-head p{color:var(--muted);margin-top:.7rem}
+
+/* products */
+.products .wrap{padding-block:1.6rem clamp(2.4rem,6vw,3.6rem)}
+.grid-prod{display:grid;grid-template-columns:repeat(4,1fr);gap:1.1rem}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;display:flex;flex-direction:column;box-shadow:0 10px 30px -22px rgba(20,40,28,.5)}
+.card .photo{position:relative;aspect-ratio:1/1;background:var(--photo-plate);display:flex;align-items:center;justify-content:center;padding:14px}
+.card .photo img{max-height:100%;width:auto;object-fit:contain}
+.card .photo.multiply img{mix-blend-mode:multiply}
+.card .disc{position:absolute;top:10px;left:10px;background:var(--sale);color:#fff;font-weight:800;font-size:.76rem;padding:.3em .6em;border-radius:7px}
+.card-body{padding:1rem 1.05rem 1.15rem;display:flex;flex-direction:column;gap:.55rem;flex:1}
+.card .vol{font-size:.7rem;letter-spacing:.14em;text-transform:uppercase;color:var(--gold);font-weight:700}
+.card h3{font-size:1.12rem;line-height:1.2}
+.benefits{list-style:none;margin:.1rem 0 0;padding:0;display:flex;flex-direction:column;gap:.3rem;font-size:.86rem;color:var(--muted)}
+.benefits li{display:flex;gap:.45rem;align-items:flex-start}
+.benefits li::before{content:"";width:7px;height:7px;margin-top:.5em;border-radius:50%;background:var(--gold);flex:0 0 auto}
+.price-row{display:flex;align-items:baseline;gap:.55rem;margin-top:auto;padding-top:.4rem;flex-wrap:wrap}
+.price-now{font-family:var(--d-head);font-weight:800;font-size:1.5rem;color:var(--clay)}
+.price-old{font-size:.95rem;color:var(--muted);text-decoration:line-through}
+.card .btn{margin-top:.3rem}
+
+/* combos */
+.combos{background:linear-gradient(180deg,var(--surface-2),var(--bg))}
+.combos .wrap{padding-block:1.4rem clamp(2.4rem,6vw,3.6rem)}
+.grid-combo{display:grid;grid-template-columns:repeat(3,1fr);gap:1.1rem}
+.combo{position:relative;background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:1.4rem;display:flex;flex-direction:column;gap:.5rem;box-shadow:0 10px 30px -22px rgba(20,40,28,.5)}
+.combo.feat{border:1.5px solid var(--gold);box-shadow:var(--shadow)}
+.combo .tag{position:absolute;top:-12px;left:1.4rem;background:var(--gold);color:#1c1405;font-weight:800;font-size:.72rem;letter-spacing:.06em;text-transform:uppercase;padding:.35em .8em;border-radius:999px}
+.combo h3{font-size:1.25rem}
+.combo .items{font-size:.88rem;color:var(--muted);flex:1}
+.combo .save{font-size:.82rem;font-weight:700;color:var(--ok)}
+.combo .price-row{margin-top:.2rem}
+
+/* story / ingredients */
+.story{background:var(--forest);color:var(--band-fg)}
+.story .wrap{padding-block:clamp(2.4rem,6vw,3.6rem)}
+.story .sec-head .eyebrow{color:var(--gold-soft)}
+.story .sec-head p{color:var(--band-muted)}
+.ing-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;margin-top:2rem}
+.ing{background:color-mix(in srgb,var(--forest-2) 70%,transparent);border:1px solid rgba(228,205,145,.2);border-radius:14px;padding:1.1rem}
+.ing h4{font-family:var(--d-head);font-size:1.1rem;margin:0 0 .3rem;color:var(--gold-soft)}
+.ing p{font-size:.86rem;color:var(--band-muted)}
+
+/* detail posters */
+.detail .wrap{padding-block:clamp(2.2rem,5vw,3.2rem)}
+.poster-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.1rem;margin-top:1.6rem}
+.poster{border:1px solid var(--line);border-radius:14px;overflow:hidden;background:var(--photo-plate)}
+.poster img{width:100%;height:auto}
+
+/* promise */
+.promise .wrap{padding-block:clamp(2.2rem,5vw,3.2rem)}
+.promise-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1rem;margin-top:1.8rem}
+.pcard{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:1.2rem;text-align:center}
+.pcard svg{width:34px;height:34px;color:var(--gold);margin-bottom:.5rem}
+.pcard b{display:block;font-size:1rem;margin-bottom:.25rem}
+.pcard span{font-size:.84rem;color:var(--muted)}
+
+/* reviews */
+.reviews{background:linear-gradient(180deg,var(--surface-2),var(--bg))}
+.reviews .wrap{padding-block:clamp(2.2rem,5vw,3.2rem)}
+.rev-note{text-align:center;font-size:.82rem;color:var(--muted);margin-top:.6rem;font-style:italic}
+.rev-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.1rem;margin-top:1.8rem}
+.rev{background:var(--surface);border:1px dashed var(--gold);border-radius:14px;padding:1.2rem;display:flex;flex-direction:column;gap:.5rem}
+.stars{color:var(--gold-bright);letter-spacing:.1em}
+.rev p{font-size:.92rem}
+.rev .who{font-size:.8rem;color:var(--muted);font-weight:600;margin-top:auto}
+
+/* faq */
+.faq .wrap{padding-block:clamp(2.2rem,5vw,3.2rem);max-width:780px}
+details.q{border-bottom:1px solid var(--line);padding:.3rem 0}
+details.q summary{cursor:pointer;list-style:none;font-weight:600;font-size:1.02rem;padding:.9rem 2rem .9rem 0;position:relative}
+details.q summary::-webkit-details-marker{display:none}
+details.q summary::after{content:"+";position:absolute;right:.2rem;top:50%;transform:translateY(-50%);font-size:1.4rem;color:var(--gold);font-weight:400}
+details.q[open] summary::after{content:"–"}
+details.q p{color:var(--muted);padding:0 0 1rem;font-size:.93rem}
+
+/* order form */
+.order{background:var(--forest-2);color:var(--band-fg)}
+.order .wrap{padding-block:clamp(2.4rem,6vw,3.6rem);max-width:720px}
+.order .sec-head{padding-top:0}
+.order .sec-head .eyebrow{color:var(--gold-soft)}
+.order .sec-head p{color:var(--band-muted)}
+.formcard{background:var(--surface);color:var(--ink);border-radius:20px;padding:clamp(1.3rem,4vw,2rem);margin-top:1.6rem;box-shadow:var(--shadow)}
+.field{display:flex;flex-direction:column;gap:.35rem;margin-bottom:.9rem}
+.field label{font-size:.82rem;font-weight:700}
+.field input,.field select,.field textarea{font-family:var(--d-body);font-size:1rem;padding:.8em .9em;border:1.5px solid var(--line);border-radius:12px;background:var(--bg);color:var(--ink);width:100%}
+.field input:focus,.field select:focus,.field textarea:focus{border-color:var(--gold);outline:none}
+.frow{display:grid;grid-template-columns:1fr 1fr;gap:.9rem}
+.err{color:var(--sale);font-size:.78rem;font-weight:600;min-height:0}
+.total-box{display:flex;align-items:center;justify-content:space-between;background:var(--surface-2);border-radius:12px;padding:.9rem 1.1rem;margin:.4rem 0 1.1rem}
+.total-box span{font-weight:600}
+.total-box b{font-family:var(--d-head);font-size:1.6rem;color:var(--clay)}
+.order-help{text-align:center;margin-top:1rem;font-size:.88rem;color:var(--band-muted)}
+.order-help a{color:var(--gold-soft);font-weight:700;text-decoration:none}
+.phone-big{font-family:var(--d-head);font-weight:800;font-size:1.3rem;color:var(--gold-soft);letter-spacing:.02em;user-select:all}
+.done{display:none;text-align:center;padding:.5rem 0}
+.done.show{display:block}
+.done .tick{width:62px;height:62px;margin:0 auto .6rem;border-radius:50%;background:color-mix(in srgb,var(--ok) 18%,transparent);color:var(--ok);display:flex;align-items:center;justify-content:center}
+.done .tick svg{width:34px;height:34px}
+.done-sum{text-align:left;background:var(--surface-2);border-radius:12px;padding:1rem;margin:1rem 0;font-size:.92rem;white-space:pre-line}
+.done-actions{display:flex;flex-wrap:wrap;gap:.6rem;justify-content:center}
+
+/* sticky mobile bar */
+.mbar{position:fixed;left:0;right:0;bottom:0;z-index:55;display:none;gap:.5rem;padding:.55rem max(10px,env(safe-area-inset-left,0px)) calc(.55rem + env(safe-area-inset-bottom,0px)) max(10px,env(safe-area-inset-right,0px));background:color-mix(in srgb,var(--bg) 92%,transparent);backdrop-filter:blur(12px);border-top:1px solid var(--line)}
+.mbar .btn{flex:1;padding:.75em .4em;font-size:.92rem}
+.mbar .btn svg{width:17px;height:17px}
+
+/* footer */
+footer.site{background:var(--forest-2);color:var(--band-fg)}
+footer.site .wrap{padding-block:clamp(2rem,5vw,2.8rem);display:grid;grid-template-columns:1.4fr 1fr;gap:1.6rem}
+footer .nm{font-family:var(--d-head);font-weight:800;font-size:1.3rem}
+footer p{color:var(--band-muted);font-size:.9rem;margin-top:.5rem}
+footer a{color:var(--gold-soft);text-decoration:none;font-weight:600}
+footer .fcontact{font-size:.92rem;line-height:1.9}
+.disc-note{border-top:1px solid rgba(228,205,145,.18);margin-top:1.4rem;padding-top:1rem;font-size:.75rem;color:var(--band-muted)}
+
+@media(max-width:860px){
+  .hero .wrap{grid-template-columns:1fr;text-align:center}
+  .hero .lede{margin-inline:auto}
+  .hero-cta,.chips{justify-content:center}
+  .hero-art{order:-1}
+  .values .wrap{grid-template-columns:1fr 1fr;gap:1.1rem}
+  .grid-prod{grid-template-columns:1fr 1fr}
+  .grid-combo{grid-template-columns:1fr}
+  .ing-grid,.poster-grid{grid-template-columns:1fr}
+  .promise-grid{grid-template-columns:1fr 1fr}
+  .rev-grid{grid-template-columns:1fr}
+  footer.site .wrap{grid-template-columns:1fr}
+}
+@media(max-width:760px){
+  .mbar{display:flex}
+  body{padding-bottom:70px}
+}
+@media(max-width:460px){
+  .grid-prod{grid-template-columns:1fr}
+  .frow{grid-template-columns:1fr}
+  .promise-grid{grid-template-columns:1fr}
+  .ann .wrap{font-size:.76rem}
+}
+@media(prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+</style>
+
+<!-- ============ ANNOUNCEMENT ============ -->
+<div class="ann band"><div class="wrap">
+  <span>🌿 <b>XẢ KHO CHÍNH HÃNG MỘC VIỆT</b> — Giá thanh lý tốt nhất năm</span>
+  <span>🚚 Freeship đơn từ 2 sản phẩm</span>
+  <span>💵 Thanh toán khi nhận hàng (COD) toàn quốc</span>
+</div></div>
+
+<!-- ============ HEADER ============ -->
+<header class="site band"><div class="wrap">
+  <a class="brand" href="#top" aria-label="Mộc Việt">
+    <img class="brand-logo" src="images/logo-mocviet.png" alt="MỘC VIỆT — Tinh hoa dược liệu Việt">
+  </a>
+  <div class="header-cta">
+    <a class="header-phone" href="tel:0966949797"><small>Hotline / Zalo</small><span class="lbl">☎ </span>0966 949 797</a>
+    <a class="btn btn-gold" href="#dat-hang">Đặt hàng</a>
+  </div>
+</div></header>
+
+<a id="top"></a>
+<!-- ============ HERO ============ -->
+<section class="hero band"><div class="wrap">
+  <div class="hero-copy">
+    <span class="badge-sale">● Đợt xả kho cuối — số lượng có hạn</span>
+    <h1>Dược liệu Việt chính hãng,<br><span class="accent">giá thanh lý</span> chưa từng có</h1>
+    <p class="lede">Trọn bộ <b>8 sản phẩm thảo mộc Mộc Việt</b> — chăm sóc tóc, da, xương khớp, đôi chân. Không paraben, không silicone, không chất tạo màu. Xả nốt lô hàng với mức giá tốt nhất năm.</p>
+    <div class="hero-cta">
+      <a class="btn btn-gold" href="#san-pham">Xem ưu đãi xả kho</a>
+      <a class="btn btn-ghost" href="tel:0966949797">☎ Gọi / Zalo 0966 949 797</a>
+    </div>
+    <div class="chips">
+      <span class="chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l8 3v6c0 5-3.5 8.5-8 11-4.5-2.5-8-6-8-11V5l8-3z"/></svg>Chính hãng 100%</span>
+      <span class="chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M8 12l3 3 5-6"/></svg>Đạt chuẩn OCOP 3★</span>
+      <span class="chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21c5-3 8-7 8-12a8 8 0 00-16 0c0 5 3 9 8 12z"/><path d="M12 10v6"/></svg>Thảo dược thiên nhiên</span>
+      <span class="chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="7" width="15" height="10" rx="2"/><path d="M17 10h3l2 3v4h-5"/><circle cx="7" cy="18" r="2"/><circle cx="17" cy="18" r="2"/></svg>Giao toàn quốc – COD</span>
+    </div>
+  </div>
+  <div class="hero-art">
+    <svg class="leafbg tl" viewBox="0 0 100 100" fill="currentColor" aria-hidden="true"><path d="M50 95C50 60 30 35 5 25c10 35 25 55 45 70zM50 95C50 60 70 35 95 25c-10 35-25 55-45 70z"/></svg>
+    <div class="hero-plate">
+      <span class="hero-ribbon">−40%</span>
+      <img src="images/dau-goi-xa.jpg" alt="Dầu gội xả 2in1 Gừng Bưởi Hoa cúc Mộc Việt">
+    </div>
+    <svg class="leafbg br" viewBox="0 0 100 100" fill="currentColor" aria-hidden="true"><path d="M50 95C50 60 30 35 5 25c10 35 25 55 45 70zM50 95C50 60 70 35 95 25c-10 35-25 55-45 70z"/></svg>
+  </div>
+</div></section>
+
+<!-- ============ VALUE BAR ============ -->
+<div class="values band"><div class="wrap">
+  <div class="value"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l8 3v6c0 5-3.5 8.5-8 11-4.5-2.5-8-6-8-11V5l8-3z"/><path d="M9 12l2 2 4-4"/></svg><div><b>Hàng chính hãng</b><span>Nguồn gốc rõ ràng, tem nhãn đầy đủ</span></div></div>
+  <div class="value"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21c5-3 8-7 8-12a8 8 0 00-16 0c0 5 3 9 8 12z"/><path d="M12 9v6"/></svg><div><b>Thành phần thiên nhiên</b><span>Không paraben · không silicone</span></div></div>
+  <div class="value"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg><div><b>Giao nhanh – COD</b><span>Nhận hàng rồi mới trả tiền</span></div></div>
+  <div class="value"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 12v7a1 1 0 01-1 1H5a1 1 0 01-1-1v-7"/><path d="M2 7h20v5H2z"/><path d="M12 22V7M12 7S9 2 6.5 3.5 7 7 12 7zM12 7s3-5 5.5-3.5S17 7 12 7z"/></svg><div><b>Giá xả kho</b><span>Giảm đến 45% so với niêm yết</span></div></div>
+</div></div>
+
+<!-- ============ PRODUCTS ============ -->
+<section class="products band" id="san-pham">
+  <div class="sec-head"><span class="eyebrow">Sản phẩm thanh lý</span><h2>8 sản phẩm chăm sóc chính hãng</h2><p>Mỗi sản phẩm là một bài thuốc dược liệu quen thuộc của người Việt — nay về tay bạn với giá tốt nhất.</p></div>
+  <div class="wrap"><div class="grid-prod">
+
+    <div class="card">
+      <div class="photo multiply"><span class="disc">−40%</span><img src="images/dau-goi-xa.jpg" alt="Dầu gội xả 2in1 Gừng Bưởi Hoa cúc Mộc Việt"></div>
+      <div class="card-body">
+        <span class="vol">Dầu gội · 500ml</span>
+        <h3>Dầu gội xả 2in1 Gừng – Bưởi – Hoa cúc</h3>
+        <ul class="benefits"><li>Giảm gàu, giảm bết, giảm ngứa da đầu</li><li>Giảm gãy rụng, kích thích mọc tóc</li><li>Gội & xả trong 1 bước, tóc mềm mượt</li></ul>
+        <div class="price-row"><span class="price-now">189.000₫</span><span class="price-old">320.000₫</span></div>
+        <button class="btn btn-gold btn-block" data-buy="gd">Đặt mua ngay</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="photo multiply"><span class="disc">−44%</span><img src="images/sua-tam.jpg" alt="Sữa tắm Trà xanh Mướp đắng Mộc Việt"></div>
+      <div class="card-body">
+        <span class="vol">Sữa tắm · 450ml</span>
+        <h3>Sữa tắm Trà xanh – Mướp đắng</h3>
+        <ul class="benefits"><li>Làm sạch sâu, se khít, khử mùi</li><li>Giữ ẩm, cho làn da mềm mại</li><li>Hương thảo mộc tươi mát, dịu nhẹ</li></ul>
+        <div class="price-row"><span class="price-now">189.000₫</span><span class="price-old">340.000₫</span></div>
+        <button class="btn btn-gold btn-block" data-buy="st">Đặt mua ngay</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="photo multiply"><span class="disc">−43%</span><img src="images/kem-u-toc.jpg" alt="Kem ủ tóc Gừng Bưởi Hoa cúc Mộc Việt"></div>
+      <div class="card-body">
+        <span class="vol">Kem ủ tóc · 300ml</span>
+        <h3>Kem ủ tóc Gừng – Bưởi – Hoa cúc</h3>
+        <ul class="benefits"><li>Phục hồi tóc khô xơ, hư tổn</li><li>Nuôi dưỡng tóc mềm mượt, chắc khỏe</li><li>Không hương liệu, không chất tạo màu</li></ul>
+        <div class="price-row"><span class="price-now">169.000₫</span><span class="price-old">300.000₫</span></div>
+        <button class="btn btn-gold btn-block" data-buy="ku">Đặt mua ngay</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="photo"><span class="disc">−34%</span><img src="images/ngam-chan.jpg" alt="Ngâm chân thảo mộc Mộc Việt"></div>
+      <div class="card-body">
+        <span class="vol">Ngâm chân · Hộp 5 gói</span>
+        <h3>Ngâm chân thảo mộc Mộc Việt</h3>
+        <ul class="benefits"><li>Ấm chân, lưu thông khí huyết</li><li>Khử mùi hôi chân, giảm đau nhức</li><li>Thư giãn, ngủ sâu giấc — đạt OCOP 3★</li></ul>
+        <div class="price-row"><span class="price-now">99.000₫</span><span class="price-old">150.000₫</span></div>
+        <button class="btn btn-gold btn-block" data-buy="nc">Đặt mua ngay</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="photo multiply"><span class="disc">−41%</span><img src="images/dau-phu-bac-ha.jpg" alt="Dầu phủ bạc Hà Thủ Ô Mộc Việt"></div>
+      <div class="card-body">
+        <span class="vol">Phủ bạc · 2×95ml</span>
+        <h3>Dầu phủ bạc Hà Thủ Ô</h3>
+        <ul class="benefits"><li>Phủ bạc, lên màu đen tự nhiên sau 15 phút</li><li>Dưỡng tóc đen bóng, mềm mượt</li><li>Chiết xuất hà thủ ô thiên nhiên</li></ul>
+        <div class="price-row"><span class="price-now">199.000₫</span><span class="price-old">335.000₫</span></div>
+        <button class="btn btn-gold btn-block" data-buy="dp">Đặt mua ngay</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="photo multiply"><span class="disc">−40%</span><img src="images/thanh-lan-massage.jpg" alt="Thanh lăn Massage Mộc Việt"></div>
+      <div class="card-body">
+        <span class="vol">Thanh lăn · 120g</span>
+        <h3>Thanh lăn Massage dưỡng da</h3>
+        <ul class="benefits"><li>Lăn massage thư giãn, làm dịu da</li><li>Giúp da vùng mỏi mềm mại</li><li>Nhỏ gọn, tiện dùng mọi lúc</li></ul>
+        <div class="price-row"><span class="price-now">219.000₫</span><span class="price-old">365.000₫</span></div>
+        <button class="btn btn-gold btn-block" data-buy="tl">Đặt mua ngay</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="photo multiply"><span class="disc">−40%</span><img src="images/xit-xuong-khop.jpg" alt="Xịt xương khớp Mộc Việt"></div>
+      <div class="card-body">
+        <span class="vol">Dạng xịt · 100ml</span>
+        <h3>Xịt xương khớp</h3>
+        <ul class="benefits"><li>Hỗ trợ giảm đau nhức xương khớp</li><li>Giảm tê bì tay chân</li><li>Lưu thông khí huyết, xoa bóp ngoài da</li></ul>
+        <div class="price-row"><span class="price-now">139.000₫</span><span class="price-old">230.000₫</span></div>
+        <button class="btn btn-gold btn-block" data-buy="xk">Đặt mua ngay</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="photo"><span class="disc">−39%</span><img src="images/xit-hoa-bia.jpg" alt="Xịt dưỡng tóc Hoa bia Mộc Việt"></div>
+      <div class="card-body">
+        <span class="vol">Xịt dưỡng tóc · 50ml</span>
+        <h3>Xịt dưỡng tóc Hoa bia</h3>
+        <ul class="benefits"><li>Hỗ trợ tóc mọc nhanh, chắc khỏe</li><li>Phục hồi tóc khô xơ, chẻ ngọn</li><li>Chiết xuất hoa bia (hops) dưỡng mượt</li></ul>
+        <div class="price-row"><span class="price-now">149.000₫</span><span class="price-old">245.000₫</span></div>
+        <button class="btn btn-gold btn-block" data-buy="hb">Đặt mua ngay</button>
+      </div>
+    </div>
+
+  </div></div>
+</section>
+
+<!-- ============ COMBOS ============ -->
+<section class="combos band">
+  <div class="sec-head"><span class="eyebrow">Combo tiết kiệm</span><h2>Mua combo — tiết kiệm hơn nữa</h2><p>Gộp bộ để chăm sóc trọn vẹn và tiết kiệm thêm. Freeship toàn quốc cho mọi combo.</p></div>
+  <div class="wrap"><div class="grid-combo">
+
+    <div class="combo">
+      <h3>Combo Chăm Tóc Toàn Diện</h3>
+      <p class="items">Dầu gội xả 2in1 + Kem ủ tóc + Xịt dưỡng tóc hoa bia. Bộ 3 làm sạch – phục hồi – kích mọc cho mái tóc chắc khỏe.</p>
+      <span class="save">Tiết kiệm 38.000₫ + Freeship</span>
+      <div class="price-row"><span class="price-now">469.000₫</span><span class="price-old">507.000₫</span></div>
+      <button class="btn btn-forest btn-block" data-buy="cb1">Chọn combo này</button>
+    </div>
+
+    <div class="combo feat">
+      <span class="tag">Bán chạy nhất</span>
+      <h3>Trọn bộ 8 món Mộc Việt</h3>
+      <p class="items">Đủ cả 8 sản phẩm: chăm sóc tóc – da – xương khớp – đôi chân cho cả gia đình. Tiết kiệm nhất, tặng quà kèm.</p>
+      <span class="save">Tiết kiệm 153.000₫ + Freeship + Quà</span>
+      <div class="price-row"><span class="price-now">1.199.000₫</span><span class="price-old">1.352.000₫</span></div>
+      <button class="btn btn-gold btn-block" data-buy="cb3">Chọn trọn bộ</button>
+    </div>
+
+    <div class="combo">
+      <h3>Combo Giảm Đau Nhức</h3>
+      <p class="items">Xịt xương khớp + Thanh lăn massage + Ngâm chân thảo mộc. Giảm mỏi, thư giãn gân cốt, ngủ ngon mỗi tối.</p>
+      <span class="save">Tiết kiệm 38.000₫ + Freeship</span>
+      <div class="price-row"><span class="price-now">419.000₫</span><span class="price-old">457.000₫</span></div>
+      <button class="btn btn-forest btn-block" data-buy="cb2">Chọn combo này</button>
+    </div>
+
+  </div></div>
+</section>
+
+<!-- ============ STORY / INGREDIENTS ============ -->
+<section class="story band">
+  <div class="wrap">
+    <div class="sec-head"><span class="eyebrow">Tinh hoa thảo dược</span><h2>Dưỡng chất từ vườn nhà người Việt</h2><p>Mộc Việt chắt lọc dược liệu quen thuộc, lành tính — không hóa chất độc hại, dịu nhẹ cho cả da nhạy cảm.</p></div>
+    <div class="ing-grid">
+      <div class="ing"><h4>Gừng</h4><p>Làm ấm, kích thích tuần hoàn da đầu, giảm gàu và hỗ trợ tóc chắc khỏe từ chân.</p></div>
+      <div class="ing"><h4>Bưởi</h4><p>Tinh dầu vỏ bưởi giúp giảm gãy rụng, kích thích mọc tóc và để lại hương thơm tự nhiên.</p></div>
+      <div class="ing"><h4>Hoa cúc</h4><p>Dịu nhẹ, làm mềm và cân bằng da đầu, phù hợp cả với làn da nhạy cảm.</p></div>
+      <div class="ing"><h4>Trà xanh</h4><p>Giàu chất chống oxy hóa, làm sạch sâu và se khít lỗ chân lông, khử mùi hiệu quả.</p></div>
+      <div class="ing"><h4>Mướp đắng</h4><p>Làm mát và dịu da, hỗ trợ làn da mịn màng, thoáng sạch sau khi tắm.</p></div>
+      <div class="ing"><h4>Thảo mộc ngâm chân</h4><p>Bài thảo mộc truyền thống giúp ấm chân, khử mùi, thư giãn và ngủ ngon hơn mỗi tối.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ DETAIL POSTERS ============ -->
+<section class="detail band">
+  <div class="sec-head"><span class="eyebrow">Thông tin sản phẩm</span><h2>Chi tiết từ nhà sản xuất</h2><p>Hình ảnh và công dụng chính thức của thương hiệu Mộc Việt.</p></div>
+  <div class="wrap"><div class="poster-grid">
+    <div class="poster"><img src="images/dau-goi-xa-info.jpg" alt="Thông tin dầu gội xả 2in1 Mộc Việt" loading="lazy"></div>
+    <div class="poster"><img src="images/sua-tam-info.jpg" alt="Thông tin sữa tắm trà xanh mướp đắng Mộc Việt" loading="lazy"></div>
+    <div class="poster"><img src="images/kem-u-toc-info.jpg" alt="Thông tin kem ủ tóc Mộc Việt" loading="lazy"></div>
+  </div></div>
+</section>
+
+<!-- ============ PROMISE ============ -->
+<section class="promise band">
+  <div class="sec-head"><span class="eyebrow">Cam kết của shop</span><h2>Vì sao yên tâm đặt hàng</h2></div>
+  <div class="wrap"><div class="promise-grid">
+    <div class="pcard"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 2l8 3v6c0 5-3.5 8.5-8 11-4.5-2.5-8-6-8-11V5l8-3z"/><path d="M9 12l2 2 4-4"/></svg><b>100% chính hãng</b><span>Cam kết đúng hàng Mộc Việt, có tem nhãn đầy đủ.</span></div>
+    <div class="pcard"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="7" width="15" height="10" rx="2"/><path d="M17 10h3l2 3v4h-5"/><circle cx="7" cy="18" r="2"/><circle cx="17" cy="18" r="2"/></svg><b>COD toàn quốc</b><span>Kiểm tra hàng rồi mới thanh toán cho shipper.</span></div>
+    <div class="pcard"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 12a9 9 0 019-9 9 9 0 019 9 9 9 0 01-9 9"/><path d="M3 12H1m2 0l3-3m-3 3l3 3"/></svg><b>Đổi trả dễ dàng</b><span>Lỗi do nhà sản xuất — đổi trả trong 7 ngày.</span></div>
+    <div class="pcard"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg><b>Tư vấn tận tâm</b><span>Nhắn Zalo/gọi 0966 949 797, hỗ trợ cả ngoài giờ.</span></div>
+  </div></div>
+</section>
+
+<!-- ============ REVIEWS ============ -->
+<section class="reviews band">
+  <div class="sec-head"><span class="eyebrow">Khách hàng nói gì</span><h2>Phản hồi người dùng</h2></div>
+  <div class="wrap">
+    <p class="rev-note">★ Khu vực này để anh dán đánh giá thật / ảnh chụp phản hồi khách hàng của mình vào (3 thẻ mẫu bên dưới).</p>
+    <div class="rev-grid">
+      <div class="rev"><div class="stars">★★★★★</div><p>“[Dán đánh giá thật của khách tại đây — ví dụ: Tóc mình đỡ rụng hẳn sau 3 tuần dùng dầu gội gừng bưởi.]”</p><span class="who">— Tên khách hàng</span></div>
+      <div class="rev"><div class="stars">★★★★★</div><p>“[Dán đánh giá thật của khách tại đây — ví dụ: Ngâm chân buổi tối dễ ngủ hẳn, mùi thảo mộc rất thơm.]”</p><span class="who">— Tên khách hàng</span></div>
+      <div class="rev"><div class="stars">★★★★★</div><p>“[Dán đánh giá thật của khách tại đây — ví dụ: Giao nhanh, đóng gói kỹ, giá lại quá hời.]”</p><span class="who">— Tên khách hàng</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FAQ ============ -->
+<section class="faq band">
+  <div class="sec-head"><span class="eyebrow">Giải đáp</span><h2>Câu hỏi thường gặp</h2></div>
+  <div class="wrap">
+    <details class="q" open><summary>Có được kiểm tra hàng trước khi trả tiền không?</summary><p>Có. Shop giao hàng toàn quốc theo hình thức COD — bạn nhận hàng, kiểm tra rồi mới thanh toán cho shipper.</p></details>
+    <details class="q"><summary>Phí ship bao nhiêu?</summary><p>Đơn từ 2 sản phẩm trở lên và tất cả combo đều được <b>freeship</b>. Đơn lẻ 1 sản phẩm tính phí ship theo khu vực (thường 20.000–30.000₫).</p></details>
+    <details class="q"><summary>Hàng có phải chính hãng Mộc Việt không?</summary><p>Đúng hàng chính hãng, tem nhãn đầy đủ. Đây là đợt thanh lý tồn kho nên giá tốt hơn niêm yết, chất lượng sản phẩm không đổi.</p></details>
+    <details class="q"><summary>Sản phẩm còn hạn sử dụng dài không?</summary><p>Tất cả sản phẩm còn hạn sử dụng rõ ràng in trên bao bì. Bạn có thể yêu cầu shop chụp ảnh ngày sản xuất/hạn dùng trước khi gửi.</p></details>
+    <details class="q"><summary>Đặt hàng bằng cách nào nhanh nhất?</summary><p>Điền phiếu đặt hàng bên dưới, hoặc gọi/nhắn Zalo <b>0966 949 797</b>. Shop xác nhận và giao trong 2–4 ngày.</p></details>
+  </div>
+</section>
+
+<!-- ============ ORDER FORM ============ -->
+<section class="order band" id="dat-hang">
+  <div class="wrap">
+    <div class="sec-head"><span class="eyebrow">Đặt hàng xả kho</span><h2>Điền phiếu — shop gọi lại xác nhận</h2><p>Để lại thông tin, shop sẽ liên hệ chốt đơn và giao hàng tận nơi (COD). Hoặc gọi/Zalo ngay <span class="phone-big">0966 949 797</span>.</p></div>
+
+    <form class="formcard" id="orderForm" novalidate>
+      <div class="field">
+        <label for="f-name">Họ và tên *</label>
+        <input id="f-name" name="name" type="text" autocomplete="name" placeholder="Nguyễn Văn A">
+        <span class="err" data-for="name"></span>
+      </div>
+      <div class="frow">
+        <div class="field">
+          <label for="f-phone">Số điện thoại *</label>
+          <input id="f-phone" name="phone" type="tel" inputmode="numeric" autocomplete="tel" placeholder="09xx xxx xxx">
+          <span class="err" data-for="phone"></span>
+        </div>
+        <div class="field">
+          <label for="f-qty">Số lượng</label>
+          <input id="f-qty" name="qty" type="number" min="1" value="1">
+        </div>
+      </div>
+      <div class="field">
+        <label for="f-prod">Chọn sản phẩm / combo *</label>
+        <select id="f-prod" name="product">
+          <option value="">— Chọn sản phẩm —</option>
+          <optgroup label="Sản phẩm lẻ">
+            <option value="gd">Dầu gội xả 2in1 Gừng–Bưởi–Hoa cúc (500ml) — 189.000₫</option>
+            <option value="st">Sữa tắm Trà xanh–Mướp đắng (450ml) — 189.000₫</option>
+            <option value="ku">Kem ủ tóc Gừng–Bưởi–Hoa cúc (300ml) — 169.000₫</option>
+            <option value="dp">Dầu phủ bạc Hà Thủ Ô (2×95ml) — 199.000₫</option>
+            <option value="tl">Thanh lăn Massage dưỡng da (120g) — 219.000₫</option>
+            <option value="xk">Xịt xương khớp (100ml) — 139.000₫</option>
+            <option value="hb">Xịt dưỡng tóc Hoa bia (50ml) — 149.000₫</option>
+            <option value="nc">Ngâm chân thảo mộc Mộc Việt (hộp 5 gói) — 99.000₫</option>
+          </optgroup>
+          <optgroup label="Combo tiết kiệm">
+            <option value="cb1">Combo Chăm Tóc Toàn Diện — 469.000₫</option>
+            <option value="cb2">Combo Giảm Đau Nhức — 419.000₫</option>
+            <option value="cb3">Trọn bộ 8 món Mộc Việt — 1.199.000₫</option>
+          </optgroup>
+        </select>
+        <span class="err" data-for="product"></span>
+      </div>
+      <div class="field">
+        <label for="f-addr">Địa chỉ nhận hàng *</label>
+        <input id="f-addr" name="address" type="text" autocomplete="street-address" placeholder="Số nhà, thôn/xã, huyện, tỉnh">
+        <span class="err" data-for="address"></span>
+      </div>
+      <div class="field">
+        <label for="f-note">Ghi chú (tuỳ chọn)</label>
+        <textarea id="f-note" name="note" rows="2" placeholder="Giờ nhận hàng, yêu cầu thêm..."></textarea>
+      </div>
+
+      <div class="total-box"><span>Tạm tính</span><b id="sumTotal">—</b></div>
+      <button type="submit" class="btn btn-gold btn-block" style="font-size:1.08rem;padding:1em">🛒 Chốt đơn — Giao tận nơi, COD</button>
+    </form>
+
+    <div class="formcard done" id="orderDone" style="margin-top:1rem">
+      <div class="tick"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6"><path d="M4 12l5 5L20 6"/></svg></div>
+      <h2 style="font-size:1.5rem">Đã ghi nhận đơn của bạn!</h2>
+      <p style="color:var(--muted);margin-top:.4rem">Shop sẽ gọi lại xác nhận trong thời gian sớm nhất. Để chốt nhanh hơn, hãy nhắn đơn này qua Zalo:</p>
+      <div class="done-sum" id="doneSum"></div>
+      <div class="done-actions">
+        <a class="btn btn-gold" id="zaloBtn" href="https://zalo.me/0966949797" target="_blank" rel="noopener">💬 Gửi đơn qua Zalo</a>
+        <a class="btn btn-forest" href="tel:0966949797">☎ Gọi 0966 949 797</a>
+        <button class="btn btn-ghost" id="copyBtn" type="button">⧉ Sao chép đơn</button>
+      </div>
+    </div>
+
+    <p class="order-help">Cần hỗ trợ ngay? Gọi hoặc Zalo <a href="tel:0966949797">0966 949 797</a> — shop tư vấn tận tình.</p>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer class="site band"><div class="wrap">
+  <div>
+    <div class="nm">MỘC VIỆT · Xả kho chính hãng</div>
+    <p>Phân phối sản phẩm chăm sóc dược liệu chính hãng Mộc Việt: dầu gội xả, sữa tắm, kem ủ tóc, dưỡng tóc, dầu phủ bạc, xịt xương khớp, ngâm chân thảo mộc. Cam kết đúng hàng, giá thanh lý, giao toàn quốc COD.</p>
+    <p class="disc-note">Thông tin công dụng theo mô tả của nhà sản xuất, mang tính tham khảo và không thay thế tư vấn y tế. Sản phẩm không phải là thuốc.</p>
+  </div>
+  <div class="fcontact">
+    <b>Liên hệ đặt hàng</b><br>
+    ☎ Hotline / Zalo: <a href="tel:0966949797">0966 949 797</a><br>
+    📍 Giao hàng toàn quốc · COD
+  </div>
+</div></footer>
+
+<!-- ============ STICKY MOBILE BAR ============ -->
+<div class="mbar">
+  <a class="btn btn-forest" href="tel:0966949797"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.9v3a2 2 0 01-2.2 2 19.8 19.8 0 01-8.6-3 19.5 19.5 0 01-6-6 19.8 19.8 0 01-3-8.6A2 2 0 014.1 2h3a2 2 0 012 1.7c.1 1 .4 1.9.7 2.8a2 2 0 01-.5 2.1L8.1 9.9a16 16 0 006 6l1.3-1.2a2 2 0 012.1-.5c.9.3 1.8.6 2.8.7a2 2 0 011.8 2z"/></svg>Gọi</a>
+  <a class="btn btn-ghost" href="https://zalo.me/0966949797" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg>Zalo</a>
+  <a class="btn btn-gold" href="#dat-hang"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 6h15l-1.5 9h-12z"/><path d="M6 6L5 3H2"/><circle cx="9" cy="20" r="1"/><circle cx="18" cy="20" r="1"/></svg>Đặt hàng</a>
+</div>
+
+<script>
+(function(){
+  "use strict";
+  var PRICE={gd:189000,st:189000,ku:169000,dp:199000,tl:219000,xk:139000,hb:149000,nc:99000,cb1:469000,cb2:419000,cb3:1199000};
+  var NAME={
+    gd:"Dầu gội xả 2in1 Gừng–Bưởi–Hoa cúc (500ml)",
+    st:"Sữa tắm Trà xanh–Mướp đắng (450ml)",
+    ku:"Kem ủ tóc Gừng–Bưởi–Hoa cúc (300ml)",
+    dp:"Dầu phủ bạc Hà Thủ Ô (2×95ml)",
+    tl:"Thanh lăn Massage dưỡng da (120g)",
+    xk:"Xịt xương khớp (100ml)",
+    hb:"Xịt dưỡng tóc Hoa bia (50ml)",
+    nc:"Ngâm chân thảo mộc Mộc Việt (hộp 5 gói)",
+    cb1:"Combo Chăm Tóc Toàn Diện",
+    cb2:"Combo Giảm Đau Nhức",
+    cb3:"Trọn bộ 8 món Mộc Việt"
+  };
+  var PHONE="0966949797";
+  function money(n){return n.toLocaleString('vi-VN')+'₫';}
+  var $=function(s,r){return (r||document).querySelector(s);};
+  var prod=$('#f-prod'),qty=$('#f-qty'),sum=$('#sumTotal'),form=$('#orderForm');
+
+  function recalc(){
+    var p=PRICE[prod.value]||0,q=Math.max(1,parseInt(qty.value,10)||1);
+    sum.textContent=p? money(p*q):'—';
+  }
+  prod.addEventListener('change',recalc);
+  qty.addEventListener('input',recalc);
+
+  // "Đặt mua" buttons
+  document.querySelectorAll('[data-buy]').forEach(function(b){
+    b.addEventListener('click',function(){
+      prod.value=b.getAttribute('data-buy');
+      recalc();
+      document.getElementById('dat-hang').scrollIntoView({behavior:'smooth',block:'start'});
+      setTimeout(function(){ $('#f-name').focus({preventScroll:true}); },400);
+    });
+  });
+
+  function setErr(name,msg){var e=document.querySelector('.err[data-for="'+name+'"]');if(e)e.textContent=msg||'';}
+
+  function buildOrder(d){
+    return "🛒 ĐƠN HÀNG MỘC VIỆT\n"+
+      "• Sản phẩm: "+NAME[d.product]+"\n"+
+      "• Số lượng: "+d.qty+"\n"+
+      "• Tạm tính: "+money(PRICE[d.product]*d.qty)+"\n"+
+      "• Họ tên: "+d.name+"\n"+
+      "• SĐT: "+d.phone+"\n"+
+      "• Địa chỉ: "+d.address+
+      (d.note?("\n• Ghi chú: "+d.note):"");
+  }
+
+  form.addEventListener('submit',function(ev){
+    ev.preventDefault();
+    var d={
+      name:$('#f-name').value.trim(),
+      phone:$('#f-phone').value.replace(/\s+/g,''),
+      product:prod.value,
+      qty:Math.max(1,parseInt(qty.value,10)||1),
+      address:$('#f-addr').value.trim(),
+      note:$('#f-note').value.trim()
+    };
+    var ok=true;
+    setErr('name');setErr('phone');setErr('product');setErr('address');
+    if(!d.name){setErr('name','Vui lòng nhập họ tên');ok=false;}
+    if(!/^0\d{9}$/.test(d.phone)){setErr('phone','Số điện thoại chưa đúng (10 số, bắt đầu bằng 0)');ok=false;}
+    if(!d.product){setErr('product','Vui lòng chọn sản phẩm');ok=false;}
+    if(!d.address){setErr('address','Vui lòng nhập địa chỉ nhận hàng');ok=false;}
+    if(!ok){ (document.querySelector('.err[data-for="name"]').textContent?$('#f-name'):$('#f-phone')).focus(); return; }
+
+    var text=buildOrder(d);
+    // backup locally (per-viewer; never leaves browser)
+    try{
+      var k='mocviet_orders',arr=JSON.parse(localStorage.getItem(k)||'[]');
+      arr.push(Object.assign({t:new Date().toISOString()},d));
+      localStorage.setItem(k,JSON.stringify(arr));
+    }catch(e){}
+
+    $('#doneSum').textContent=text;
+    $('#copyBtn').setAttribute('data-text',text);
+    form.hidden=true;
+    var done=$('#orderDone');done.classList.add('show');
+    done.scrollIntoView({behavior:'smooth',block:'center'});
+  });
+
+  $('#copyBtn').addEventListener('click',function(){
+    var t=this.getAttribute('data-text')||'',btn=this;
+    function done(){var o=btn.textContent;btn.textContent='✓ Đã sao chép';setTimeout(function(){btn.textContent=o;},1800);}
+    if(navigator.clipboard&&navigator.clipboard.writeText){
+      navigator.clipboard.writeText(t).then(done).catch(function(){fallback(t,done);});
+    }else{fallback(t,done);}
+  });
+  function fallback(t,cb){
+    var ta=document.createElement('textarea');ta.value=t;ta.style.position='fixed';ta.style.opacity='0';
+    document.body.appendChild(ta);ta.select();try{document.execCommand('copy');cb();}catch(e){}document.body.removeChild(ta);
+  }
+})();
+</script>
