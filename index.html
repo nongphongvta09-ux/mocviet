@@ -569,6 +569,7 @@ footer .fcontact{font-size:.92rem;line-height:1.9}
         <a class="btn btn-forest" href="tel:0966949797">☎ Gọi 0966 949 797</a>
         <button class="btn btn-ghost" id="copyBtn" type="button">⧉ Sao chép đơn</button>
       </div>
+      <p style="font-size:.82rem;color:var(--muted);margin-top:.55rem;line-height:1.5">💡 Bấm <b>Gửi đơn qua Zalo</b> sẽ tự <b>sao chép đơn</b> — bạn chỉ cần dán vào khung chat Zalo rồi gửi. Trên máy tính Zalo có thể hỏi đăng nhập; bạn đăng nhập rồi gửi, hoặc gọi/nhắn trực tiếp <b>0966&nbsp;949&nbsp;797</b>.</p>
     </div>
 
     <p class="order-help">Cần hỗ trợ ngay? Gọi hoặc Zalo <a href="tel:0966949797">0966 949 797</a> — shop tư vấn tận tình.</p>
@@ -692,5 +693,17 @@ footer .fcontact{font-size:.92rem;line-height:1.9}
     var ta=document.createElement('textarea');ta.value=t;ta.style.position='fixed';ta.style.opacity='0';
     document.body.appendChild(ta);ta.select();try{document.execCommand('copy');cb();}catch(e){}document.body.removeChild(ta);
   }
+
+  // Zalo: tự sao chép đơn rồi mở chat với shop (tốt nhất trên điện thoại có app Zalo)
+  var zBtn=$('#zaloBtn');
+  if(zBtn){ zBtn.addEventListener('click',function(ev){
+    ev.preventDefault();
+    var t=($('#copyBtn').getAttribute('data-text'))||'';
+    window.open('https://zalo.me/0966949797','_blank','noopener');
+    var self=this,o=self.textContent;
+    function flip(){self.textContent='✓ Đã sao chép đơn — dán vào Zalo';setTimeout(function(){self.textContent=o;},2600);}
+    if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(t).then(flip).catch(function(){fallback(t,flip);});}
+    else{fallback(t,flip);}
+  }); }
 })();
 </script>
