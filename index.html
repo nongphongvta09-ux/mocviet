@@ -194,7 +194,13 @@ section{scroll-margin-top:84px}
 /* reviews */
 .reviews{background:linear-gradient(180deg,var(--surface-2),var(--bg))}
 .reviews .wrap{padding-block:clamp(2.2rem,5vw,3.2rem)}
-.rev-note{text-align:center;font-size:.82rem;color:var(--muted);margin-top:.6rem;font-style:italic}
+.rev-note{text-align:center;font-size:.9rem;color:var(--muted);margin-top:.6rem}
+.rev-invite{max-width:760px;margin:1.8rem auto 0;background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);padding:clamp(1.4rem,4vw,2rem);display:flex;gap:1.2rem;align-items:center}
+.rev-invite .ri-ic{font-size:2.2rem;flex:0 0 auto;width:66px;height:66px;border-radius:50%;background:color-mix(in srgb,var(--gold) 15%,transparent);display:flex;align-items:center;justify-content:center}
+.rev-invite h3{font-size:1.2rem;margin-bottom:.3rem}
+.rev-invite .ri-body p{color:var(--muted);font-size:.95rem;margin-bottom:.9rem}
+.ri-cta{display:flex;gap:.6rem;flex-wrap:wrap}
+@media(max-width:560px){.rev-invite{flex-direction:column;text-align:center}.ri-cta{justify-content:center}}
 .rev-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.1rem;margin-top:1.8rem}
 .rev{background:var(--surface);border:1px dashed var(--gold);border-radius:14px;padding:1.2rem;display:flex;flex-direction:column;gap:.5rem}
 .stars{color:var(--gold-bright);letter-spacing:.1em}
@@ -640,12 +646,25 @@ footer .fcontact{font-size:.92rem;line-height:1.9}
 <section class="reviews band">
   <div class="sec-head"><span class="eyebrow">Khách hàng nói gì</span><h2>Phản hồi người dùng</h2></div>
   <div class="wrap">
-    <p class="rev-note">★ Khu vực này để anh dán đánh giá thật / ảnh chụp phản hồi khách hàng của mình vào (3 thẻ mẫu bên dưới).</p>
-    <div class="rev-grid">
-      <div class="rev"><div class="stars">★★★★★</div><p>“[Dán đánh giá thật của khách tại đây — ví dụ: Tóc mình đỡ rụng hẳn sau 3 tuần dùng dầu gội gừng bưởi.]”</p><span class="who">— Tên khách hàng</span></div>
-      <div class="rev"><div class="stars">★★★★★</div><p>“[Dán đánh giá thật của khách tại đây — ví dụ: Ngâm chân buổi tối dễ ngủ hẳn, mùi thảo mộc rất thơm.]”</p><span class="who">— Tên khách hàng</span></div>
-      <div class="rev"><div class="stars">★★★★★</div><p>“[Dán đánh giá thật của khách tại đây — ví dụ: Giao nhanh, đóng gói kỹ, giá lại quá hời.]”</p><span class="who">— Tên khách hàng</span></div>
+    <p class="rev-note">Mộc Việt trân trọng từng phản hồi thật từ khách hàng — không chạy theo con số ảo.</p>
+    <div class="rev-invite">
+      <div class="ri-ic">💬</div>
+      <div class="ri-body">
+        <h3>Bạn đã dùng sản phẩm Mộc Việt?</h3>
+        <p>Nhắn Zalo gửi cảm nhận của bạn để Mộc Việt đăng tải và gửi lời cảm ơn bằng ưu đãi cho lần mua sau nhé!</p>
+        <div class="ri-cta">
+          <a class="btn btn-gold" href="https://zalo.me/0336881288" target="_blank" rel="noopener">💬 Gửi cảm nhận qua Zalo</a>
+          <a class="btn btn-ghost" href="tel:0336881288">☎ 0336 881 288</a>
+        </div>
+      </div>
     </div>
+    <!-- 📌 Khi có ĐÁNH GIÁ THẬT của khách, bỏ cặp dấu comment ở khối dưới và điền nội dung thật (không dùng đánh giá ảo):
+    <div class="rev-grid">
+      <div class="rev"><div class="stars">★★★★★</div><p>"Nội dung cảm nhận thật của khách."</p><span class="who">— Tên khách hàng, khu vực</span></div>
+      <div class="rev"><div class="stars">★★★★★</div><p>"Nội dung cảm nhận thật của khách."</p><span class="who">— Tên khách hàng, khu vực</span></div>
+      <div class="rev"><div class="stars">★★★★★</div><p>"Nội dung cảm nhận thật của khách."</p><span class="who">— Tên khách hàng, khu vực</span></div>
+    </div>
+    -->
   </div>
 </section>
 
