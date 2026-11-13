@@ -1,6 +1,25 @@
+<!doctype html>
+<html lang="vi"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Mộc Việt Chính Hãng</title>
 <meta name="claude:viewport-fit-sides" content="cover">
-<meta name="description" content="Xả kho chính hãng Mộc Việt — dầu gội xả, sữa tắm, kem ủ tóc, ngâm chân thảo dược. Giá thanh lý, COD toàn quốc.">
+<meta name="description" content="Quà Tri Ân Thầy Cô 20/11 & xả kho chính hãng Mộc Việt — dầu gội, sữa tắm, dầu phủ bạc, xịt xương khớp trong hộp quà Nét Việt. Freeship, COD toàn quốc.">
+<!-- Favicon + ảnh chia sẻ mạng xã hội (Open Graph) -->
+<link rel="icon" type="image/png" href="images/logo-mocviet.png">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Mộc Việt">
+<meta property="og:title" content="Quà Tri Ân Thầy Cô 20/11 — Mộc Việt chính hãng">
+<meta property="og:description" content="Bộ quà 20/11 từ thảo mộc Việt trong hộp quà Nét Việt sang trọng, kèm thiệp tay. Freeship, COD toàn quốc — đặt sớm kẻo hết.">
+<meta property="og:image" content="https://nongphongvta09-ux.github.io/mocviet/images/og-20-11.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:url" content="https://nongphongvta09-ux.github.io/mocviet/">
+<meta property="og:locale" content="vi_VN">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Quà Tri Ân Thầy Cô 20/11 — Mộc Việt">
+<meta name="twitter:description" content="Bộ quà 20/11 từ thảo mộc Việt, hộp quà Nét Việt sang trọng. Freeship, COD toàn quốc.">
+<meta name="twitter:image" content="https://nongphongvta09-ux.github.io/mocviet/images/og-20-11.jpg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;0,800;1,500;1,600&family=Be+Vietnam+Pro:wght@300;400;500;600;700;800&display=swap">
@@ -231,7 +250,54 @@ footer a{color:var(--gold-soft);text-decoration:none;font-weight:600}
 footer .fcontact{font-size:.92rem;line-height:1.9}
 .disc-note{border-top:1px solid rgba(228,205,145,.18);margin-top:1.4rem;padding-top:1rem;font-size:.75rem;color:var(--band-muted)}
 
+/* ===== 20/11 GIFT PROGRAM ===== */
+.gift{position:relative;overflow:hidden;border-top:1px solid var(--line);
+  background:
+    radial-gradient(90% 70% at 10% -10%,color-mix(in srgb,var(--gold-soft) 32%,transparent),transparent 55%),
+    radial-gradient(80% 70% at 100% 0%,color-mix(in srgb,var(--clay) 9%,transparent),transparent 50%),
+    linear-gradient(180deg,var(--surface),var(--bg))}
+.gift .wrap{padding-block:clamp(2.4rem,6vw,3.8rem)}
+.gift-banner{display:grid;grid-template-columns:1.05fr .95fr;gap:clamp(1.4rem,4vw,2.6rem);align-items:center}
+.gift-banner .pic{position:relative;border-radius:22px;overflow:hidden;box-shadow:var(--shadow);aspect-ratio:4/3;background:var(--photo-plate)}
+.gift-banner .pic img{width:100%;height:100%;object-fit:cover;display:block}
+.gift-banner .pic .seal{position:absolute;top:14px;left:14px;background:var(--sale);color:#fff;font-weight:800;font-size:.8rem;letter-spacing:.03em;padding:.45em 1em;border-radius:999px;box-shadow:0 8px 18px -8px rgba(0,0,0,.5)}
+.gift-eyebrow{display:inline-flex;align-items:center;gap:.4em;color:var(--clay);font-weight:800;letter-spacing:.12em;text-transform:uppercase;font-size:.74rem}
+.gift h2{font-size:clamp(1.9rem,5vw,3rem);margin:.6rem 0 0;color:var(--ink)}
+.gift h2 em{font-style:italic;color:var(--clay)}
+.gift .sub{color:var(--muted);font-size:1.04rem;margin-top:.7rem;max-width:42ch}
+.gift .perks{display:flex;flex-wrap:wrap;gap:.5rem;margin-top:1.1rem}
+.gift .perks .chip{background:var(--surface);border:1px solid var(--line)}
+.cd{display:flex;align-items:center;gap:.6rem;margin-top:1.4rem;flex-wrap:wrap}
+.cd .lab{font-size:.84rem;color:var(--muted);font-weight:600}
+.cd .box{display:flex;gap:.4rem}
+.cd .u{min-width:3.3em;text-align:center;background:var(--forest);color:var(--band-fg);border-radius:10px;padding:.42rem .2rem}
+.cd .u b{font-family:var(--d-head);font-size:1.5rem;display:block;line-height:1;font-variant-numeric:tabular-nums}
+.cd .u span{font-size:.56rem;letter-spacing:.12em;text-transform:uppercase;color:var(--gold-soft)}
+.gift-cta{margin-top:1.5rem;display:flex;flex-wrap:wrap;gap:.7rem}
+.gift-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.2rem;margin-top:clamp(1.8rem,4vw,2.6rem)}
+.gcard{position:relative;background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;display:flex;flex-direction:column;box-shadow:0 12px 32px -22px rgba(20,40,28,.55)}
+.gcard .gimg{position:relative;aspect-ratio:1/1;overflow:hidden;background:var(--photo-plate)}
+.gcard .gimg img{width:100%;height:100%;object-fit:cover;transition:transform .5s ease}
+.gcard:hover .gimg img{transform:scale(1.04)}
+.gcard .rib{position:absolute;top:12px;left:12px;background:linear-gradient(135deg,var(--gold-bright),var(--gold));color:#1c1405;font-weight:800;font-size:.72rem;letter-spacing:.03em;padding:.35em .8em;border-radius:999px;box-shadow:0 6px 14px -6px rgba(120,90,20,.7)}
+.gcard-body{padding:1.1rem 1.15rem 1.25rem;display:flex;flex-direction:column;gap:.5rem;flex:1}
+.gcard .msg{font-family:var(--d-head);font-style:italic;color:var(--clay);font-size:.95rem;line-height:1.3}
+.gcard h3{font-size:1.2rem;line-height:1.2}
+.gcard .inside{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:.3rem;font-size:.86rem;color:var(--muted)}
+.gcard .inside li{display:flex;gap:.45rem;align-items:flex-start}
+.gcard .inside li::before{content:"🎁";font-size:.78rem;margin-top:.05em}
+.gcard .price-row{display:flex;align-items:baseline;gap:.5rem;margin-top:auto;padding-top:.3rem;flex-wrap:wrap}
+.gcard .price-now{font-family:var(--d-head);font-weight:800;font-size:1.45rem;color:var(--clay)}
+.gcard .giftfree{font-size:.76rem;color:var(--ok);font-weight:700}
+/* scroll reveal (class chỉ gắn bằng JS nên không có JS vẫn hiện đủ) */
+.reveal{opacity:0;transform:translateY(18px);transition:opacity .6s ease,transform .6s ease}
+.reveal.in{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}}
+
 @media(max-width:860px){
+  .gift-banner{grid-template-columns:1fr}
+  .gift-banner .pic{order:-1}
+  .gift-grid{grid-template-columns:1fr 1fr}
   .hero .wrap{grid-template-columns:1fr;text-align:center}
   .hero .lede{margin-inline:auto}
   .hero-cta,.chips{justify-content:center}
@@ -248,6 +314,7 @@ footer .fcontact{font-size:.92rem;line-height:1.9}
   .mbar{display:flex}
   body{padding-bottom:70px}
 }
+@media(max-width:560px){ .gift-grid{grid-template-columns:1fr} }
 @media(max-width:460px){
   .grid-prod{grid-template-columns:1fr}
   .frow{grid-template-columns:1fr}
@@ -259,9 +326,9 @@ footer .fcontact{font-size:.92rem;line-height:1.9}
 
 <!-- ============ ANNOUNCEMENT ============ -->
 <div class="ann band"><div class="wrap">
-  <span>🌿 <b>XẢ KHO CHÍNH HÃNG MỘC VIỆT</b> — Giá thanh lý tốt nhất năm</span>
-  <span>🚚 Freeship đơn từ 2 sản phẩm</span>
-  <span>💵 Thanh toán khi nhận hàng (COD) toàn quốc</span>
+  <span>🎁 <b>QUÀ TRI ÂN THẦY CÔ 20/11</b> — Hộp quà Nét Việt sang trọng</span>
+  <span>🚚 Freeship · 💵 COD toàn quốc</span>
+  <span>⏰ Đặt sớm để kịp giao trước 20/11</span>
 </div></div>
 
 <!-- ============ HEADER ============ -->
@@ -279,12 +346,12 @@ footer .fcontact{font-size:.92rem;line-height:1.9}
 <!-- ============ HERO ============ -->
 <section class="hero band"><div class="wrap">
   <div class="hero-copy">
-    <span class="badge-sale">● Đợt xả kho cuối — số lượng có hạn</span>
+    <span class="badge-sale">🎓 Quà Tri Ân Thầy Cô 20/11 · số lượng có hạn</span>
     <h1>Dược liệu Việt chính hãng,<br><span class="accent">giá thanh lý</span> chưa từng có</h1>
     <p class="lede">Trọn bộ <b>8 sản phẩm thảo mộc Mộc Việt</b> — chăm sóc tóc, da, xương khớp, đôi chân. Không paraben, không silicone, không chất tạo màu. Xả nốt lô hàng với mức giá tốt nhất năm.</p>
     <div class="hero-cta">
-      <a class="btn btn-gold" href="#san-pham">Xem ưu đãi xả kho</a>
-      <a class="btn btn-ghost" href="tel:0966949797">☎ Gọi / Zalo 0966 949 797</a>
+      <a class="btn btn-gold" href="#qua-20-11">🎁 Xem quà Tri Ân 20/11</a>
+      <a class="btn btn-ghost" href="#san-pham">Ưu đãi xả kho</a>
     </div>
     <div class="chips">
       <span class="chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l8 3v6c0 5-3.5 8.5-8 11-4.5-2.5-8-6-8-11V5l8-3z"/></svg>Chính hãng 100%</span>
@@ -310,6 +377,80 @@ footer .fcontact{font-size:.92rem;line-height:1.9}
   <div class="value"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg><div><b>Giao nhanh – COD</b><span>Nhận hàng rồi mới trả tiền</span></div></div>
   <div class="value"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 12v7a1 1 0 01-1 1H5a1 1 0 01-1-1v-7"/><path d="M2 7h20v5H2z"/><path d="M12 22V7M12 7S9 2 6.5 3.5 7 7 12 7zM12 7s3-5 5.5-3.5S17 7 12 7z"/></svg><div><b>Giá xả kho</b><span>Giảm đến 45% so với niêm yết</span></div></div>
 </div></div>
+
+<!-- ============ 20/11 GIFT PROGRAM ============ -->
+<section class="gift band" id="qua-20-11">
+  <div class="wrap">
+    <div class="gift-banner">
+      <div>
+        <span class="gift-eyebrow">🎓 Chương trình 20/11 · Tri ân Thầy Cô</span>
+        <h2>Quà Tri Ân <em>Thầy Cô</em><br>gói trọn yêu thương</h2>
+        <p class="sub">Những bộ quà thảo mộc Mộc Việt trong <b>hộp quà Nét Việt</b> sang trọng, kèm thiệp 20/11 viết tay. Một món quà sức khỏe thay lời cảm ơn người lái đò thầm lặng.</p>
+        <div class="perks">
+          <span class="chip">🎁 Tặng hộp quà Nét Việt</span>
+          <span class="chip">💌 Kèm thiệp 20/11</span>
+          <span class="chip">🚚 Freeship toàn quốc</span>
+          <span class="chip">💵 COD — nhận mới trả tiền</span>
+        </div>
+        <div class="cd" id="cd2011">
+          <span class="lab">⏰ Đặt trước 20/11 còn:</span>
+          <div class="box">
+            <div class="u"><b data-d>00</b><span>Ngày</span></div>
+            <div class="u"><b data-h>00</b><span>Giờ</span></div>
+            <div class="u"><b data-m>00</b><span>Phút</span></div>
+            <div class="u"><b data-s>00</b><span>Giây</span></div>
+          </div>
+        </div>
+        <div class="gift-cta">
+          <a class="btn btn-gold" href="#dat-hang">Đặt bộ quà ngay</a>
+          <a class="btn btn-ghost" href="tel:0966949797">☎ Tư vấn chọn quà</a>
+        </div>
+      </div>
+      <div class="pic">
+        <span class="seal">🎀 Tri ân 20/11</span>
+        <img src="images/qua-20-11-hero.jpg" alt="Bộ quà Tri Ân Thầy Cô 20/11 Mộc Việt — hộp quà Nét Việt" loading="lazy">
+      </div>
+    </div>
+
+    <div class="gift-grid">
+      <article class="gcard">
+        <div class="gimg"><span class="rib">🎁 Set quà 20/11</span><img src="images/qua-thu-thai.jpg" alt="Bộ quà Thư Thái Mỗi Ngày Mộc Việt" loading="lazy"></div>
+        <div class="gcard-body">
+          <p class="msg">“Thư thái sau những giờ lên lớp”</p>
+          <h3>Bộ Quà Thư Thái Mỗi Ngày</h3>
+          <ul class="inside"><li>Dầu gội xả Gừng–Bưởi–Hoa cúc</li><li>Sữa tắm Trà xanh–Mướp đắng</li><li>Hộp quà Nét Việt + thiệp 20/11</li></ul>
+          <div class="price-row"><span class="price-now">379.000₫</span></div>
+          <span class="giftfree">✓ Tặng kèm hộp quà + thiệp tay</span>
+          <button class="btn btn-gold btn-block" data-buy="q1">Đặt bộ quà này</button>
+        </div>
+      </article>
+
+      <article class="gcard">
+        <div class="gimg"><span class="rib">🎁 Set quà 20/11</span><img src="images/qua-xoa-diu.jpg" alt="Bộ quà Xoa Dịu Bờ Vai Mộc Việt" loading="lazy"></div>
+        <div class="gcard-body">
+          <p class="msg">“Xoa dịu bờ vai sau bao năm đứng lớp”</p>
+          <h3>Bộ Quà Xoa Dịu Bờ Vai</h3>
+          <ul class="inside"><li>Thanh lăn Massage dưỡng da</li><li>Xịt xương khớp Mộc Việt</li><li>Hộp quà Nét Việt + thiệp 20/11</li></ul>
+          <div class="price-row"><span class="price-now">359.000₫</span></div>
+          <span class="giftfree">✓ Tặng kèm hộp quà + thiệp tay</span>
+          <button class="btn btn-gold btn-block" data-buy="q2">Đặt bộ quà này</button>
+        </div>
+      </article>
+
+      <article class="gcard">
+        <div class="gimg"><span class="rib">🎁 Set quà 20/11</span><img src="images/qua-mai-toc.jpg" alt="Bộ quà Mái Tóc Người Lái Đò Mộc Việt" loading="lazy"></div>
+        <div class="gcard-body">
+          <p class="msg">“Giữ mãi mái tóc đen của người lái đò”</p>
+          <h3>Bộ Quà Mái Tóc Người Lái Đò</h3>
+          <ul class="inside"><li>Dầu phủ bạc Hà Thủ Ô</li><li>Dầu gội xả Gừng–Bưởi–Hoa cúc</li><li>Hộp quà Nét Việt + thiệp 20/11</li></ul>
+          <div class="price-row"><span class="price-now">389.000₫</span></div>
+          <span class="giftfree">✓ Tặng kèm hộp quà + thiệp tay</span>
+          <button class="btn btn-gold btn-block" data-buy="q3">Đặt bộ quà này</button>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
 
 <!-- ============ PRODUCTS ============ -->
 <section class="products band" id="san-pham">
@@ -527,6 +668,11 @@ footer .fcontact{font-size:.92rem;line-height:1.9}
         <label for="f-prod">Chọn sản phẩm / combo *</label>
         <select id="f-prod" name="product">
           <option value="">— Chọn sản phẩm —</option>
+          <optgroup label="🎁 Quà tặng 20/11 — Tri ân Thầy Cô">
+            <option value="q1">Bộ quà Thư Thái Mỗi Ngày (Dầu gội + Sữa tắm) — 379.000₫</option>
+            <option value="q2">Bộ quà Xoa Dịu Bờ Vai (Thanh lăn + Xịt khớp) — 359.000₫</option>
+            <option value="q3">Bộ quà Mái Tóc Người Lái Đò (Dầu phủ bạc + Dầu gội) — 389.000₫</option>
+          </optgroup>
           <optgroup label="Sản phẩm lẻ">
             <option value="gd">Dầu gội xả 2in1 Gừng–Bưởi–Hoa cúc (500ml) — 189.000₫</option>
             <option value="st">Sữa tắm Trà xanh–Mướp đắng (450ml) — 189.000₫</option>
@@ -600,7 +746,7 @@ footer .fcontact{font-size:.92rem;line-height:1.9}
 <script>
 (function(){
   "use strict";
-  var PRICE={gd:189000,st:189000,ku:169000,dp:199000,tl:219000,xk:139000,hb:149000,nc:99000,cb1:469000,cb2:419000,cb3:1199000};
+  var PRICE={gd:189000,st:189000,ku:169000,dp:199000,tl:219000,xk:139000,hb:149000,nc:99000,cb1:469000,cb2:419000,cb3:1199000,q1:379000,q2:359000,q3:389000};
   var NAME={
     gd:"Dầu gội xả 2in1 Gừng–Bưởi–Hoa cúc (500ml)",
     st:"Sữa tắm Trà xanh–Mướp đắng (450ml)",
@@ -612,9 +758,23 @@ footer .fcontact{font-size:.92rem;line-height:1.9}
     nc:"Ngâm chân thảo mộc Mộc Việt (hộp 5 gói)",
     cb1:"Combo Chăm Tóc Toàn Diện",
     cb2:"Combo Giảm Đau Nhức",
-    cb3:"Trọn bộ 8 món Mộc Việt"
+    cb3:"Trọn bộ 8 món Mộc Việt",
+    q1:"Bộ quà 20/11 Thư Thái Mỗi Ngày (Dầu gội + Sữa tắm)",
+    q2:"Bộ quà 20/11 Xoa Dịu Bờ Vai (Thanh lăn + Xịt xương khớp)",
+    q3:"Bộ quà 20/11 Mái Tóc Người Lái Đò (Dầu phủ bạc + Dầu gội)"
   };
   var PHONE="0966949797";
+  // 📨 ĐƠN TỰ ĐỘNG VỀ EMAIL: tạo form ở formspree.io (miễn phí) rồi dán link dạng
+  //    https://formspree.io/f/xxxxxxx vào dòng dưới. Để trống = chỉ lưu máy + gửi Zalo như cũ.
+  var ORDER_ENDPOINT="";
+  function postOrder(d,text){
+    if(!ORDER_ENDPOINT) return;
+    try{
+      fetch(ORDER_ENDPOINT,{method:"POST",headers:{"Content-Type":"application/json","Accept":"application/json"},
+        body:JSON.stringify({sanpham:(NAME[d.product]||d.product),soluong:d.qty,tamtinh:money((PRICE[d.product]||0)*d.qty),hoten:d.name,sdt:d.phone,diachi:d.address,ghichu:d.note,don:text})
+      }).catch(function(){});
+    }catch(e){}
+  }
   function money(n){return n.toLocaleString('vi-VN')+'₫';}
   var $=function(s,r){return (r||document).querySelector(s);};
   var prod=$('#f-prod'),qty=$('#f-qty'),sum=$('#sumTotal'),form=$('#orderForm');
@@ -668,6 +828,7 @@ footer .fcontact{font-size:.92rem;line-height:1.9}
     if(!ok){ (document.querySelector('.err[data-for="name"]').textContent?$('#f-name'):$('#f-phone')).focus(); return; }
 
     var text=buildOrder(d);
+    postOrder(d,text); // gửi đơn về email nếu đã cấu hình ORDER_ENDPOINT
     // backup locally (per-viewer; never leaves browser)
     try{
       var k='mocviet_orders',arr=JSON.parse(localStorage.getItem(k)||'[]');
@@ -705,5 +866,32 @@ footer .fcontact{font-size:.92rem;line-height:1.9}
     if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(t).then(flip).catch(function(){fallback(t,flip);});}
     else{fallback(t,flip);}
   }); }
+
+  // ===== Đếm ngược tới 20/11 =====
+  (function(){
+    var box=document.getElementById('cd2011'); if(!box) return;
+    var dE=box.querySelector('[data-d]'),hE=box.querySelector('[data-h]'),mE=box.querySelector('[data-m]'),sE=box.querySelector('[data-s]'),lab=box.querySelector('.lab');
+    var now=new Date(), yr=now.getFullYear();
+    var target=new Date(yr,10,20,0,0,0); // 20/11
+    if(target-now < -86400000){ target=new Date(yr+1,10,20,0,0,0); }
+    function p(n){return (n<10?'0':'')+n;}
+    function go(){
+      var diff=Math.floor((target-new Date())/1000);
+      if(diff<=0){ if(lab)lab.textContent='🎉 20/11 — đặt quà tri ân ngay!'; dE.textContent=hE.textContent=mE.textContent=sE.textContent='00'; return; }
+      dE.textContent=p(Math.floor(diff/86400)); hE.textContent=p(Math.floor(diff%86400/3600)); mE.textContent=p(Math.floor(diff%3600/60)); sE.textContent=p(diff%60);
+      setTimeout(go,1000);
+    }
+    go();
+  })();
+
+  // ===== Hiệu ứng xuất hiện khi cuộn =====
+  (function(){
+    if(!('IntersectionObserver' in window) || window.matchMedia('(prefers-reduced-motion:reduce)').matches) return;
+    var els=document.querySelectorAll('.gcard,.card,.combo,.pcard,.ing,.rev');
+    els.forEach(function(el){el.classList.add('reveal');});
+    var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}});},{threshold:.12,rootMargin:'0px 0px -40px 0px'});
+    els.forEach(function(el){io.observe(el);});
+    setTimeout(function(){els.forEach(function(el){el.classList.add('in');});},1800); // fallback luôn hiện
+  })();
 })();
 </script>
