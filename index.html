@@ -289,6 +289,15 @@ footer .fcontact{font-size:.92rem;line-height:1.9}
 .gcard .price-row{display:flex;align-items:baseline;gap:.5rem;margin-top:auto;padding-top:.3rem;flex-wrap:wrap}
 .gcard .price-now{font-family:var(--d-head);font-weight:800;font-size:1.45rem;color:var(--clay)}
 .gcard .giftfree{font-size:.76rem;color:var(--ok);font-weight:700}
+.gift-gallery{margin-top:clamp(1.8rem,4vw,2.6rem)}
+.gg-head{display:flex;align-items:baseline;gap:.7rem;margin-bottom:1rem;flex-wrap:wrap}
+.gg-head h3{font-size:1.25rem;color:var(--ink)}
+.gg-head .eyebrow{color:var(--gold)}
+.gg-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:.8rem}
+.gg-item{aspect-ratio:4/3;border-radius:14px;overflow:hidden;border:1px solid var(--line);background:var(--photo-plate)}
+.gg-item img{width:100%;height:100%;object-fit:cover;object-position:center 30%;transition:transform .5s ease}
+.gg-item:hover img{transform:scale(1.05)}
+@media(max-width:620px){.gg-grid{grid-template-columns:1fr 1fr}}
 /* scroll reveal (class chỉ gắn bằng JS nên không có JS vẫn hiện đủ) */
 .reveal{opacity:0;transform:translateY(18px);transition:opacity .6s ease,transform .6s ease}
 .reveal.in{opacity:1;transform:none}
@@ -448,6 +457,16 @@ footer .fcontact{font-size:.92rem;line-height:1.9}
           <button class="btn btn-gold btn-block" data-buy="q3">Đặt bộ quà này</button>
         </div>
       </article>
+    </div>
+
+    <div class="gift-gallery">
+      <div class="gg-head"><span class="eyebrow">Ảnh thật 100%</span><h3>Hình ảnh thật bộ quà Nét Việt</h3></div>
+      <div class="gg-grid">
+        <div class="gg-item"><img src="images/qua-netviet-a.jpg" alt="Bộ quà Nét Việt — dầu gội & sữa tắm Mộc Việt" loading="lazy"></div>
+        <div class="gg-item"><img src="images/qua-netviet-b.jpg" alt="Bộ quà Nét Việt — thanh lăn & xịt xương khớp Mộc Việt" loading="lazy"></div>
+        <div class="gg-item"><img src="images/qua-netviet-c.jpg" alt="Bộ quà Nét Việt — dầu phủ bạc Hà Thủ Ô Mộc Việt" loading="lazy"></div>
+        <div class="gg-item"><img src="images/qua-netviet-d.jpg" alt="Bộ quà Nét Việt — dầu gội xả Mộc Việt" loading="lazy"></div>
+      </div>
     </div>
   </div>
 </section>
