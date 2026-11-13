@@ -86,15 +86,15 @@ p{margin:0}
 /* header */
 header.site{position:sticky;top:env(safe-area-inset-top,0px);z-index:50;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
 header.site .wrap{display:flex;align-items:center;gap:1rem;padding-block:.7rem}
-.brand{display:flex;align-items:center;gap:.6rem;text-decoration:none;color:var(--ink);background:var(--photo-plate);padding:.26rem .6rem;border-radius:10px}
-.brand-logo{height:30px;width:auto;display:block}
+.brand{display:flex;align-items:center;gap:.6rem;text-decoration:none;color:var(--ink);background:var(--photo-plate);padding:.4rem .85rem;border-radius:12px;box-shadow:0 2px 12px -7px rgba(20,40,28,.4)}
+.brand-logo{height:48px;width:auto;display:block}
 .brand .mark{width:38px;height:38px;flex:0 0 auto}
 .brand .nm{font-family:var(--d-head);font-weight:800;font-size:1.22rem;letter-spacing:.02em;line-height:1}
 .brand .tg{font-size:.6rem;letter-spacing:.2em;text-transform:uppercase;color:var(--muted);font-weight:600}
 .header-cta{margin-left:auto;display:flex;align-items:center;gap:.7rem}
 .header-phone{font-weight:700;color:var(--ink);text-decoration:none;white-space:nowrap;font-size:.98rem}
 .header-phone small{display:block;font-size:.58rem;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);font-weight:600}
-@media(max-width:620px){.header-phone .lbl{display:none}}
+@media(max-width:620px){.header-phone .lbl{display:none}.brand-logo{height:38px}.brand{padding:.3rem .6rem}}
 
 /* hero */
 .hero{background:
@@ -337,7 +337,7 @@ footer .fcontact{font-size:.92rem;line-height:1.9}
     <img class="brand-logo" src="images/logo-mocviet.png" alt="MỘC VIỆT — Tinh hoa dược liệu Việt">
   </a>
   <div class="header-cta">
-    <a class="header-phone" href="tel:0966949797"><small>Hotline / Zalo</small><span class="lbl">☎ </span>0966 949 797</a>
+    <a class="header-phone" href="tel:0336881288"><small>Hotline / Zalo</small><span class="lbl">☎ </span>0336 881 288</a>
     <a class="btn btn-gold" href="#dat-hang">Đặt hàng</a>
   </div>
 </div></header>
@@ -403,7 +403,7 @@ footer .fcontact{font-size:.92rem;line-height:1.9}
         </div>
         <div class="gift-cta">
           <a class="btn btn-gold" href="#dat-hang">Đặt bộ quà ngay</a>
-          <a class="btn btn-ghost" href="tel:0966949797">☎ Tư vấn chọn quà</a>
+          <a class="btn btn-ghost" href="tel:0336881288">☎ Tư vấn chọn quà</a>
         </div>
       </div>
       <div class="pic">
@@ -613,7 +613,7 @@ footer .fcontact{font-size:.92rem;line-height:1.9}
     <div class="pcard"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 2l8 3v6c0 5-3.5 8.5-8 11-4.5-2.5-8-6-8-11V5l8-3z"/><path d="M9 12l2 2 4-4"/></svg><b>100% chính hãng</b><span>Cam kết đúng hàng Mộc Việt, có tem nhãn đầy đủ.</span></div>
     <div class="pcard"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="7" width="15" height="10" rx="2"/><path d="M17 10h3l2 3v4h-5"/><circle cx="7" cy="18" r="2"/><circle cx="17" cy="18" r="2"/></svg><b>COD toàn quốc</b><span>Kiểm tra hàng rồi mới thanh toán cho shipper.</span></div>
     <div class="pcard"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 12a9 9 0 019-9 9 9 0 019 9 9 9 0 01-9 9"/><path d="M3 12H1m2 0l3-3m-3 3l3 3"/></svg><b>Đổi trả dễ dàng</b><span>Lỗi do nhà sản xuất — đổi trả trong 7 ngày.</span></div>
-    <div class="pcard"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg><b>Tư vấn tận tâm</b><span>Nhắn Zalo/gọi 0966 949 797, hỗ trợ cả ngoài giờ.</span></div>
+    <div class="pcard"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg><b>Tư vấn tận tâm</b><span>Nhắn Zalo/gọi 0336 881 288, hỗ trợ cả ngoài giờ.</span></div>
   </div></div>
 </section>
 
@@ -638,14 +638,14 @@ footer .fcontact{font-size:.92rem;line-height:1.9}
     <details class="q"><summary>Phí ship bao nhiêu?</summary><p>Đơn từ 2 sản phẩm trở lên và tất cả combo đều được <b>freeship</b>. Đơn lẻ 1 sản phẩm tính phí ship theo khu vực (thường 20.000–30.000₫).</p></details>
     <details class="q"><summary>Hàng có phải chính hãng Mộc Việt không?</summary><p>Đúng hàng chính hãng, tem nhãn đầy đủ. Đây là đợt thanh lý tồn kho nên giá tốt hơn niêm yết, chất lượng sản phẩm không đổi.</p></details>
     <details class="q"><summary>Sản phẩm còn hạn sử dụng dài không?</summary><p>Tất cả sản phẩm còn hạn sử dụng rõ ràng in trên bao bì. Bạn có thể yêu cầu shop chụp ảnh ngày sản xuất/hạn dùng trước khi gửi.</p></details>
-    <details class="q"><summary>Đặt hàng bằng cách nào nhanh nhất?</summary><p>Điền phiếu đặt hàng bên dưới, hoặc gọi/nhắn Zalo <b>0966 949 797</b>. Shop xác nhận và giao trong 2–4 ngày.</p></details>
+    <details class="q"><summary>Đặt hàng bằng cách nào nhanh nhất?</summary><p>Điền phiếu đặt hàng bên dưới, hoặc gọi/nhắn Zalo <b>0336 881 288</b>. Shop xác nhận và giao trong 2–4 ngày.</p></details>
   </div>
 </section>
 
 <!-- ============ ORDER FORM ============ -->
 <section class="order band" id="dat-hang">
   <div class="wrap">
-    <div class="sec-head"><span class="eyebrow">Đặt hàng xả kho</span><h2>Điền phiếu — shop gọi lại xác nhận</h2><p>Để lại thông tin, shop sẽ liên hệ chốt đơn và giao hàng tận nơi (COD). Hoặc gọi/Zalo ngay <span class="phone-big">0966 949 797</span>.</p></div>
+    <div class="sec-head"><span class="eyebrow">Đặt hàng xả kho</span><h2>Điền phiếu — shop gọi lại xác nhận</h2><p>Để lại thông tin, shop sẽ liên hệ chốt đơn và giao hàng tận nơi (COD). Hoặc gọi/Zalo ngay <span class="phone-big">0336 881 288</span>.</p></div>
 
     <form class="formcard" id="orderForm" novalidate>
       <div class="field">
@@ -711,14 +711,14 @@ footer .fcontact{font-size:.92rem;line-height:1.9}
       <p style="color:var(--muted);margin-top:.4rem">Shop sẽ gọi lại xác nhận trong thời gian sớm nhất. Để chốt nhanh hơn, hãy nhắn đơn này qua Zalo:</p>
       <div class="done-sum" id="doneSum"></div>
       <div class="done-actions">
-        <a class="btn btn-gold" id="zaloBtn" href="https://zalo.me/0966949797" target="_blank" rel="noopener">💬 Gửi đơn qua Zalo</a>
-        <a class="btn btn-forest" href="tel:0966949797">☎ Gọi 0966 949 797</a>
+        <a class="btn btn-gold" id="zaloBtn" href="https://zalo.me/0336881288" target="_blank" rel="noopener">💬 Gửi đơn qua Zalo</a>
+        <a class="btn btn-forest" href="tel:0336881288">☎ Gọi 0336 881 288</a>
         <button class="btn btn-ghost" id="copyBtn" type="button">⧉ Sao chép đơn</button>
       </div>
-      <p style="font-size:.82rem;color:var(--muted);margin-top:.55rem;line-height:1.5">💡 Bấm <b>Gửi đơn qua Zalo</b> sẽ tự <b>sao chép đơn</b> — bạn chỉ cần dán vào khung chat Zalo rồi gửi. Trên máy tính Zalo có thể hỏi đăng nhập; bạn đăng nhập rồi gửi, hoặc gọi/nhắn trực tiếp <b>0966&nbsp;949&nbsp;797</b>.</p>
+      <p style="font-size:.82rem;color:var(--muted);margin-top:.55rem;line-height:1.5">💡 Bấm <b>Gửi đơn qua Zalo</b> sẽ tự <b>sao chép đơn</b> — bạn chỉ cần dán vào khung chat Zalo rồi gửi. Trên máy tính Zalo có thể hỏi đăng nhập; bạn đăng nhập rồi gửi, hoặc gọi/nhắn trực tiếp <b>0336&nbsp;881&nbsp;288</b>.</p>
     </div>
 
-    <p class="order-help">Cần hỗ trợ ngay? Gọi hoặc Zalo <a href="tel:0966949797">0966 949 797</a> — shop tư vấn tận tình.</p>
+    <p class="order-help">Cần hỗ trợ ngay? Gọi hoặc Zalo <a href="tel:0336881288">0336 881 288</a> — shop tư vấn tận tình.</p>
   </div>
 </section>
 
@@ -731,15 +731,15 @@ footer .fcontact{font-size:.92rem;line-height:1.9}
   </div>
   <div class="fcontact">
     <b>Liên hệ đặt hàng</b><br>
-    ☎ Hotline / Zalo: <a href="tel:0966949797">0966 949 797</a><br>
+    ☎ Hotline / Zalo: <a href="tel:0336881288">0336 881 288</a><br>
     📍 Giao hàng toàn quốc · COD
   </div>
 </div></footer>
 
 <!-- ============ STICKY MOBILE BAR ============ -->
 <div class="mbar">
-  <a class="btn btn-forest" href="tel:0966949797"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.9v3a2 2 0 01-2.2 2 19.8 19.8 0 01-8.6-3 19.5 19.5 0 01-6-6 19.8 19.8 0 01-3-8.6A2 2 0 014.1 2h3a2 2 0 012 1.7c.1 1 .4 1.9.7 2.8a2 2 0 01-.5 2.1L8.1 9.9a16 16 0 006 6l1.3-1.2a2 2 0 012.1-.5c.9.3 1.8.6 2.8.7a2 2 0 011.8 2z"/></svg>Gọi</a>
-  <a class="btn btn-ghost" href="https://zalo.me/0966949797" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg>Zalo</a>
+  <a class="btn btn-forest" href="tel:0336881288"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.9v3a2 2 0 01-2.2 2 19.8 19.8 0 01-8.6-3 19.5 19.5 0 01-6-6 19.8 19.8 0 01-3-8.6A2 2 0 014.1 2h3a2 2 0 012 1.7c.1 1 .4 1.9.7 2.8a2 2 0 01-.5 2.1L8.1 9.9a16 16 0 006 6l1.3-1.2a2 2 0 012.1-.5c.9.3 1.8.6 2.8.7a2 2 0 011.8 2z"/></svg>Gọi</a>
+  <a class="btn btn-ghost" href="https://zalo.me/0336881288" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg>Zalo</a>
   <a class="btn btn-gold" href="#dat-hang"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 6h15l-1.5 9h-12z"/><path d="M6 6L5 3H2"/><circle cx="9" cy="20" r="1"/><circle cx="18" cy="20" r="1"/></svg>Đặt hàng</a>
 </div>
 
@@ -763,7 +763,7 @@ footer .fcontact{font-size:.92rem;line-height:1.9}
     q2:"Bộ quà 20/11 Xoa Dịu Bờ Vai (Thanh lăn + Xịt xương khớp)",
     q3:"Bộ quà 20/11 Mái Tóc Người Lái Đò (Dầu phủ bạc + Dầu gội)"
   };
-  var PHONE="0966949797";
+  var PHONE="0336881288";
   // 📨 ĐƠN TỰ ĐỘNG VỀ EMAIL: tạo form ở formspree.io (miễn phí) rồi dán link dạng
   //    https://formspree.io/f/xxxxxxx vào dòng dưới. Để trống = chỉ lưu máy + gửi Zalo như cũ.
   var ORDER_ENDPOINT="";
@@ -860,7 +860,7 @@ footer .fcontact{font-size:.92rem;line-height:1.9}
   if(zBtn){ zBtn.addEventListener('click',function(ev){
     ev.preventDefault();
     var t=($('#copyBtn').getAttribute('data-text'))||'';
-    window.open('https://zalo.me/0966949797','_blank','noopener');
+    window.open('https://zalo.me/0336881288','_blank','noopener');
     var self=this,o=self.textContent;
     function flip(){self.textContent='✓ Đã sao chép đơn — dán vào Zalo';setTimeout(function(){self.textContent=o;},2600);}
     if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(t).then(flip).catch(function(){fallback(t,flip);});}
